@@ -9,4 +9,4 @@ class brain :
 
 
     def decision(self,by,tx,tl,tu):
-        return np.math.tanh(np.matmul(np.array([[by,tx,tl,tu]]), self.weights))
+        return np.tanh(np.matmul(np.array([[by,tx,tl,tu]]), self.weights))

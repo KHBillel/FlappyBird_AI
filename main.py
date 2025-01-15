@@ -8,6 +8,7 @@ import numpy as np
 
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
+POPULATION_SIZE = 80
 
 
 pygame.init()
@@ -18,7 +19,7 @@ iteration=0
 
 while True :
     if best == None :
-        for i in range(1):
+        for i in range(POPULATION_SIZE):
             pop.add(bird_maker.genBird(600))
     else :
         pop.reinit()
@@ -27,7 +28,7 @@ while True :
     
     pop.differtiate()
     # trained weights : pop.pool[0].brain.weights=np.array([[ 3.58840662],[ -0.48806278],[-0.65371758],[-5.71694412]])
-    pop.pool[0].brain.weights=np.array([[ 3.58840662],[ -0.48806278],[-0.65371758],[-5.71694412]])
+    # pop.pool[0].brain.weights=np.array([[ 3.58840662],[ -0.48806278],[-0.65371758],[-5.71694412]])
     tube1, tube2=tube_maker.genTubes(800,600)
     while not pop.are_all_dead():
         # Clearing all sprites and rebuilding the screen:

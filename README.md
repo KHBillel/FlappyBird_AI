@@ -69,9 +69,3 @@ Files to start with for changes
 
 License
 - The project is published under the GPLv2 as included in the repository.
-
-If you want, I can:
-- produce a shorter or longer README,
-- add an example of saving/loading weights,
-- propose a small refactor to normalize inputs and improve the brain,
-- or open a draft PR with README changes. Which would you prefer?
